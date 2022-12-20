@@ -8,14 +8,24 @@
 
 
 <url>
-  <loc>https://ande528c.github.io/Billysport/</loc>
-  <lastmod>2022-12-20T13:18:01+00:00</lastmod>
+  <loc>https://ande528c.github.io/billysport_redesign/index.html</loc>
+  <lastmod>2022-12-20T19:43:57+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://ande528c.github.io/Billysport/index.html</loc>
-  <lastmod>2022-12-20T13:18:01+00:00</lastmod>
+  <loc>https://ande528c.github.io/billysport_redesign/gallery.html</loc>
+  <lastmod>2022-12-20T19:43:57+00:00</lastmod>
   <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ande528c.github.io/billysport_redesign/produktview.html</loc>
+  <lastmod>2022-12-20T19:43:57+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://ande528c.github.io/billysport_redesign/produktviewcopy.html</loc>
+  <lastmod>2022-12-20T19:43:57+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 
 
