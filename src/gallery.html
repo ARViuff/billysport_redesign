@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="descripton"
+      content="this is a unsolicited redesign school project, this page is the productview of a webshop redesign"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka+One&family=K2D&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Billysport-gallery</title>
+  </head>
+  <body class="">
+    <header>
+      <div class="my-5 mx-2 flex justify-between">
+        <a href="index.html">
+          <h1 class="font-headline text-5xl text-blue">BILLYSPORT</h1></a
+        >
+
+        <input
+          type="text"
+          placeholder="Søg"
+          class="input input-bordered input-primary float w-full max-w-xs"
+        />
+      </div>
+      <div class="h-6 w-[100%] bg-blue ring-1"></div>
+      <nav class="">
+        <ul class="float-right flex list-none justify-end">
+          <!--FAQ link, under her skulle man kunne finde alle copyright links og spørgsmål samt viden om levering-->
+          <li class="mx-2"><a href="*">FAQ</a></li>
+          <li class="mx-0.5 h-10 w-10 bg-blue p-1">
+            <img src="img/heart-svgrepo-com.svg" alt="icon af et hjerte" />
+          </li>
+          <li class="mx-0.5 bg-blue p-1">
+            <img
+              class="h-7 w-7"
+              src="img/shopping-cart-svgrepo-com.svg"
+              alt="indkøbsvogen kurv icon"
+            />
+          </li>
+          <li class="mx-0.5 bg-blue p-1">
+            <img
+              class="h-7 w-7"
+              src="img/profile-svgrepo-com.svg"
+              alt="profil icon"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--brødkrummer-->
+    <p class="text-light-grey"><a href="index.html">forsiden</a>- gallery</p>
+    <ul class="my-10 flex list-none justify-center gap-4">
+      <li class="font-bold"><a href="gallery.html">Mænd</a></li>
+      <li><a href="*">Kvinder</a></li>
+      <li><a href="*">Drenge</a></li>
+      <li><a href="*">Piger</a></li>
+    </ul>
+    <!-- filter produkt liste -->
+    <main class="flex justify-between">
+      <nav class="grid-rows-24 m-4 grid h-auto w-10 grid-cols-1 align-baseline">
+        <button
+          data-kategori="alle"
+          class="hover:text-light-blue active:text-black"
+        >
+          Alle
+        </button>
+        <button
+          data-kategori="trøjer"
+          class="hover:text-light-blue active:text-black"
+        >
+          Trøjer
+        </button>
+        <button
+          data-kategori="busker"
+          class="hover:text-light-blue active:text-black"
+        >
+          Busker
+        </button>
+        <button
+          data-kategori="sko"
+          class="hover:text-light-blue active:text-black"
+        >
+          Sko
+        </button>
+        <button
+          data-kategori="undertøj"
+          class="hover:text-light-blue active:text-black"
+        >
+          Undertøj
+        </button>
+        <button
+          data-kategori="overtrøjer"
+          class="hover:text-light-blue active:text-black"
+        >
+          Overtrøjer
+        </button>
+        <button
+          data-kategori="handsker og huer"
+          class="hover:text-light-blue active:text-black"
+        >
+          Handsker og Huer
+        </button>
+        <button
+          data-kategori="sokker"
+          class="hover:text-light-blue active:text-black"
+        >
+          Sokker
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="shorts"
+        >
+          Shorts
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="løb"
+        >
+          Løb
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="fodbold"
+        >
+          Fodbold
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="vm 2022"
+        >
+          VM 2022
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="tennis"
+        >
+          Tennis
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="svedbånd/hårelstik"
+        >
+          Svedbånd/Hårelstik
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="padel tennis"
+        >
+          Padel Tennis
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="spinning"
+        >
+          Spinning
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="vintertilbehør"
+        >
+          Vintertilbehør
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="svømming"
+        >
+          Svømmning
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="plejemidler"
+        >
+          Plejemidler
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="dart"
+        >
+          Dart
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="rulleskøjter"
+        >
+          Rulleskøjter
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="rygsække"
+        >
+          Rygsække
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="motionsudstyr"
+        >
+          Motionsudstyr
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="soveposer"
+        >
+          Soveposer
+        </button>
+        <button
+          class="hover:text-light-blue active:text-black"
+          data-kategori="bordtennis"
+        >
+          Bordtennis
+        </button>
+      </nav>
+      <!-- filtreret produkt lavet som tempalte -->
+      <section class="container grid grid-cols-5 grid-rows-6 gap-3">
+        <template>
+          <article class="m-4 h-auto w-auto ring-2">
+            <a href="produktviewcopy.html">
+              <img
+                class="h-auto w-[500px]"
+                src="img/pexels-j-sarkar-991509.webp"
+                alt="billed af et produkt"
+              />
+              <div class="h-1 w-[100%] bg-blue ring-1"></div>
+              <h4 class="navn font-semi-bold m-1 font-undertitle text-xl"></h4>
+              <p class="beskrivelse m-1 font-ptext"></p>
+              <p class="pris text-center text-lg font-bold"></p>
+            </a>
+            <img class="m-2 h-8 w-8" src="" alt="icon af et hjerte" />
+          </article>
+        </template>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="h-2 w-[100%] bg-blue ring-1"></div>
+      <div class="grid grid-cols-2">
+        <div class="mx-5">
+          <h3 class="text-xl">Kundeservice</h3>
+          <ul class="">
+            <li>adresse: M.D Fictive vej 5</li>
+            <li>Postnummer/By 0000 falskby</li>
+            <li>Telefonnummer 00 00 00 00</li>
+            <li>email falskmail@falsk</li>
+            <li>åbneingstider 00:00 - 24:00</li>
+          </ul>
+        </div>
+
+        <div class="mx-5">
+          <h3 class="my-4 text-center text-xl">Nyhedsbrev</h3>
+          <div class="flex justify-center gap-4">
+            <input
+              type="text"
+              placeholder="Navn"
+              class="input input-bordered input-primary float w-full max-w-xs"
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="input input-bordered input-primary float w-full max-w-xs"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="col-start-2 col-end-3 my-3 w-20 rounded-lg bg-light-blue text-center text-white shadow-lg hover:bg-pale-blue"
+            >
+              Bekræft
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+  <!-- filter script taget fra et tidliger projekt -->
+  <script>
+    const url = "https://tema7-fd75.restdb.io/rest/billysport";
+    const key = "61fcf9c13f215f310a37be89";
+    let container = document.querySelector(".container");
+    const temp = document.querySelector("template");
+    let billysport;
+    const options = {
+      headers: {
+        "x-apikey": key,
+      },
+    };
+
+    document.addEventListener("DOMContentLoaded", start);
+
+    let filter = "alle";
+    function start() {
+      const filterknapper = document.querySelectorAll("nav button");
+      filterknapper.forEach((knap) =>
+        knap.addEventListener("click", filtrerItem)
+      );
+    }
+    function filtrerItem() {
+      filter = this.dataset.kategori;
+      vis();
+    }
+
+    async function hentData() {
+      const respons = await fetch(url, options);
+
+      /*const json = await resspons.json();*/
+      billysport = await respons.json();
+      vis();
+    }
+
+    function vis() {
+      console.log(billysport);
+
+      container.textContent = "";
+      console.log({ container });
+      billysport.forEach((item) => {
+        if (filter == item.kategori || filter == "alle") {
+          const klon = temp.cloneNode(true).content;
+          klon.querySelector("img").src = `img/${item.billede}`;
+          klon.querySelector("h4").textContent = `${item.navn}`;
+          klon.querySelector(
+            ".beskrivelse"
+          ).textContent = `${item.beskrivelse}`;
+
+          klon.querySelector(".pris").textContent = `${item.pris}.kr`;
+          container.appendChild(klon);
+        }
+      });
+    }
+
+    hentData();
+  </script>
+</html>

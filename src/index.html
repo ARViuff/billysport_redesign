@@ -2,16 +2,324 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="descripton"
+      content="this is a unsolicited redesign school project, this page is the index of a webshop redesign"
+    />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka+One&family=K2D&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Billysport</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template E2022</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+
+  <!-- title -->
+  <body class="">
+    <header>
+      <div class="my-5 mx-2 flex justify-between">
+        <a href="index.html">
+          <h1 class="font-headline text-blue text-5xl">BILLYSPORT</h1></a
+        >
+        <!-- søge funktion, virker ikke lige nu-->
+        <input
+          type="text"
+          placeholder="Søg"
+          class="input input-bordered input-primary float w-full max-w-xs"
+        />
+      </div>
+      <div class="bg-blue h-6 w-[100%] ring-1"></div>
+      <!-- nav bar, med iconer for favorit produkter, kurv og profil-->
+      <nav class="">
+        <ul class="float-right flex list-none justify-end">
+          <!--FAQ link, under her skulle man kunne finde alle copyright links og spørgsmål samt viden om levering-->
+          <li class="mx-2"><a href="*">FAQ</a></li>
+          <li class="bg-blue mx-0.5 h-10 w-10 p-1">
+            <img src="img/heart-svgrepo-com.svg" alt="icon af et hjerte" />
+          </li>
+          <li class="bg-blue mx-0.5 p-1">
+            <img
+              class="h-7 w-7"
+              src="img/shopping-cart-svgrepo-com.svg"
+              alt="indkøbsvogen kurv icon"
+            />
+          </li>
+          <li class="bg-blue mx-0.5 p-1">
+            <img
+              class="h-7 w-7"
+              src="img/profile-svgrepo-com.svg"
+              alt="profil icon"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- nav bar for produkter opdelt i køn og alder -->
+    <ul class="my-10 flex list-none justify-center gap-4">
+      <li><a href="gallery.html">Mænd</a></li>
+      <li><a href="*">Kvinder</a></li>
+      <li><a href="*">Drenge</a></li>
+      <li><a href="*">Piger</a></li>
+    </ul>
+    <!-- reklame skal være her. -->
+    <main>
+      <section class="mx-4 grid grid-cols-2 gap-2">
+        <img
+          class=""
+          src="img/pexels-towfiqu-barbhuiya-8680596.webp"
+          alt="reklame billede"
+        />
+        <img
+          class="h-[510px] object-right"
+          src="img/pexels-hamza-nouasria-12725051.webp"
+          alt="reklame billede af en sko"
+        />
+      </section>
+      <div class="bg-blue h-2 w-[100%] ring-1"></div>
+      <!-- udsalgs vare  -->
+      <h2 class="font-undertitle text-center text-2xl">Udsalgs Vare</h2>
+      <div class="grid grid-flow-col grid-cols-1 items-center">
+        <button>
+          <img
+            class="h-10 w-10"
+            src="img/arrow-back-before-svgrepo-com.svg"
+            alt="navigations icon"
+          />
+        </button>
+
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billede"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-svgrepo-com.svg"
+            alt="favorit icon ikke valgt"
+          />
+        </article>
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billeder"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-filled-svgrepo.svg"
+            alt="favorit icon valgt"
+          />
+        </article>
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billeder"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-svgrepo-com.svg"
+            alt="favorit icon ikke valgt"
+          />
+        </article>
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billeder"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-svgrepo-com.svg"
+            alt="favorit icon ikke valgt"
+          />
+        </article>
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billeder"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-svgrepo-com.svg"
+            alt="favorit icon ikke valgt"
+          />
+        </article>
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billeder"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-svgrepo-com.svg"
+            alt="favorit icon ikke valgt"
+          />
+        </article>
+        <article class="m-4 h-auto w-[150px] ring-2">
+          <a href="produktview.html">
+            <img
+              class="h-auto w-[500px]"
+              src="img/pexels-j-sarkar-991509.webp"
+              alt="produkt billeder"
+            />
+            <div class="bg-blue h-1 w-[100%] ring-1"></div>
+            <h4 class="font-semi-bold font-undertitle m-1 text-xl">
+              Produkt navn
+            </h4>
+            <p class="font-ptext m-1">
+              Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum ipsum Lorum
+              ipsum
+            </p>
+            <p class="text-green text-center text-lg font-bold">2000</p>
+          </a>
+
+          <img
+            class="m-2 h-8 w-8"
+            src="img/heart-svgrepo-com.svg"
+            alt="favorit icon ikke valgt"
+          />
+        </article>
+
+        <button>
+          <img
+            class="h-10 w-10 rotate-180"
+            src="img/arrow-back-before-svgrepo-com.svg"
+            alt="navigations icon højre"
+          />
+        </button>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer>
+      <div class="bg-blue h-2 w-[100%] ring-1"></div>
+      <div class="grid grid-cols-2">
+        <div class="mx-5">
+          <h3 class="text-xl">Kundeservice</h3>
+          <ul class="">
+            <li>adresse: M.D Fictive vej 5</li>
+            <li>Postnummer/By 0000 falskby</li>
+            <li>Telefonnummer 00 00 00 00</li>
+            <li>email falskmail@falsk</li>
+            <li>åbneingstider 00:00 - 24:00</li>
+          </ul>
+        </div>
+        <!-- nyheds brev formular -->
+        <div class="mx-5">
+          <h3 class="my-4 text-center text-xl">Nyhedsbrev</h3>
+          <div class="flex justify-center gap-4">
+            <input
+              type="text"
+              placeholder="Navn"
+              class="input input-bordered input-primary float w-full max-w-xs"
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="input input-bordered input-primary float w-full max-w-xs"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="bg-light-blue hover:bg-pale-blue col-start-2 col-end-3 my-3 w-20 rounded-lg text-center text-white shadow-lg"
+            >
+              Bekræft
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>

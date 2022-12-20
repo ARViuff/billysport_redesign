@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="descripton"
+      content="this is a unsolicited redesign school project, this page is the productview of a webshop redesign"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=K2D&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Fredoka+One&family=K2D&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Billysport-produktviewcopy</title>
+  </head>
+  <body class="">
+    <header>
+      <div class="my-5 mx-2 flex justify-between">
+        <a href="index.html">
+          <h1 class="font-headline text-5xl text-blue">BILLYSPORT</h1></a
+        >
+
+        <input
+          type="text"
+          placeholder="Søg"
+          class="input input-bordered input-primary float w-full max-w-xs"
+        />
+      </div>
+      <div class="h-6 w-[100%] bg-blue ring-1"></div>
+      <nav class="">
+        <ul class="float-right flex list-none justify-end">
+          <!--FAQ link, under her skulle man kunne finde alle copyright links og spørgsmål samt viden om levering-->
+          <li class="mx-2"><a href="*">FAQ</a></li>
+          <li class="mx-0.5 h-10 w-10 bg-blue p-1">
+            <img src="img/heart-svgrepo-com.svg" alt="icon af et hjerte" />
+          </li>
+          <li class="mx-0.5 bg-blue p-1">
+            <img
+              class="h-7 w-7"
+              src="img/shopping-cart-svgrepo-com.svg"
+              alt="indkøbsvogen kurv icon"
+            />
+          </li>
+          <li class="mx-0.5 bg-blue p-1">
+            <img
+              class="h-7 w-7"
+              src="img/profile-svgrepo-com.svg"
+              alt="profil icon"
+            />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--brødkrummer-->
+    <p class="text-light-grey">
+      <a href="index.html">forsiden</a>- <a href="gallery.html">gallery</a>-
+      produktviewS
+    </p>
+    <main
+      x-data="{ step: 'step1', farver: 'red', quantity: 'S', howmany : '1', amount : '4'}"
+    >
+      <h2 class="m-4 font-undertitle text-2xl">Produktnavn</h2>
+      <section class="m-4 grid grid-cols-2">
+        <img
+          class="h-auto w-[500px] ring-2"
+          src="img/pexels-j-sarkar-991509.webp"
+          alt="produkt billed"
+        />
+        <section class="grid grid-cols-1">
+          <p class="font-ptext">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque at metus bibendum, posuere ligula ac, sagittis ante.
+            Mauris ac erat semper sapien scelerisque bibendum. Suspendisse erat
+            est, efficitur nec laoreet eu, imperdiet non nisi. Suspendisse non
+            posuere massa, sed feugiat augue. Suspendisse ullamcorper tristique
+            magna, quis rhoncus dui pulvinar nec. Nam at hendrerit metus.
+            Curabitur a lobortis arcu. Ut tincidunt velit ut nulla elementum
+            ullamcorper. Phasellus eu augue in leo eleifend malesuada. Donec
+            fringilla, felis eu imperdiet imperdiet, odio dui egestas lectus,
+            tincidunt efficitur erat purus a magna. Aliquam ut quam maximus,
+            rutrum nibh a, condimentum nisl. Ut urna quam, fermentum in
+            condimentum vel, dapibus et neque. Etiam sed lectus ac ligula luctus
+            mattis. Phasellus lacinia est a interdum maximus. Duis in
+            consectetur libero. Sed ac scelerisque justo.
+          </p>
+
+          <ul class="grid grid-cols-1 gap-2">
+            <li class="font-ptext">* sagittis ante. Mauris ac erat</li>
+            <li class="font-ptext">* Lorem ipsum dolor sit amet</li>
+            <li class="font-ptext">
+              * Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Pellentesque at metus bibendum
+            </li>
+            <li class="font-ptext">* Lorem ipsum dolor ante. Mauris ac erat</li>
+            <li class="font-ptext">* Lorem ipsum</li>
+          </ul>
+        </section>
+      </section>
+      <section class="m-4 grid grid-cols-2">
+        <div class="grid grid-cols-1 gap-1">
+          <p><del class="text-Red">3000</del>.kr</p>
+          <h3 class="text-lg">
+            <strong class="text-lg font-bold text-green">2000</strong>.kr
+          </h3>
+        </div>
+        <!--købs processen-->
+        <section class="border-slate-500 border-b py-8">
+          <!-- step 1 -->
+          <div id="step1" x-show="step === 'step1'">
+            <p class="mb-4">vælge farve</p>
+            <form id="winesubscriptionform" class="grid grid-cols-4">
+              <div>
+                <input
+                  type="radio"
+                  id="red"
+                  name="farve"
+                  value="red"
+                  x-model="farve"
+                />
+                <label for="red">Rød </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="white"
+                  name="farve"
+                  value="white"
+                  x-model="farve"
+                />
+                <label for="white">hvid</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="blue"
+                  name="farve"
+                  value="blue"
+                  x-model="farve"
+                />
+                <label for="blue">blå</label>
+              </div>
+            </form>
+          </div>
+
+          <!-- step 2-->
+          <div id="step2" x-show="step === 'step2'">
+            <label for="quantity">Størrelse</label>
+            <select
+              name="quantity"
+              id="quantity"
+              x-model="quantity"
+              form="size"
+            >
+              <option value="1">S</option>
+              <option value="2">M</option>
+              <option value="3">L</option>
+              <option value="4">XL</option>
+              <option value="5">XXL</option>
+            </select>
+          </div>
+
+          <!-- step 3 -->
+          <div id="step3" x-show="step === 'step3'">
+            <label for="howmany">Antal:</label>
+            <select name="howmany" id="howmany" x-model="howmany" form="size">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+            </select>
+          </div>
+
+          <!-- step 4-->
+          <div id="step4" x-show="step === 'step4'" class="prose">
+            <h3>Din order:</h3>
+
+            <p x-show="farver === 'red'">Rød</p>
+            <p x-show="farver === 'white'">Hvid</p>
+            <p x-show="farver === 'blue'">Blå</p>
+
+            <p>
+              <span x-text="`${quantity} antal`"></span>
+              <span x-show="howmany === 'one'">1</span>
+              <span x-show="howmany === 'two'">2</span>
+              <span x-show="howmany === 'three'">3</span>
+              <span x-show="howmany === 'four'">4</span>
+            </p>
+
+            <p>
+              <span>Price: </span
+              ><span
+                class="font-bold"
+                x-text="`${quantity * 2000} DKK `"
+              ></span>
+            </p>
+          </div>
+        </section>
+
+        <div class="">
+          <button
+            id="knap2"
+            class="hover:slide-left border-2 border-blue p-2"
+            x-on:click="step = 'step1'"
+            x-show="step === 'step2'"
+          >
+            &LeftArrow; Farver
+          </button>
+
+          <button
+            id="knap3"
+            class="hover:slide-left border-2 border-blue p-2"
+            x-on:click="step = 'step2'"
+            x-show="step === 'step3'"
+          >
+            &LeftArrow; Størrelse
+          </button>
+
+          <button
+            id="knap4"
+            class="hover:slide-left border-2 border-blue p-2"
+            x-on:click="step = 'step3'"
+            x-show="step === 'step4'"
+          >
+            &LeftArrow; Antal
+          </button>
+        </div>
+        <div class="">
+          <button
+            id="knap2"
+            class="hover:slide-right border-2 border-blue p-2"
+            x-on:click="step = 'step2'"
+            x-show="step === 'step1'"
+          >
+            Størrelse &RightArrow;
+          </button>
+
+          <button
+            id="knap3"
+            class="hover:slide-right border-2 border-blue p-2"
+            x-on:click="step = 'step3'"
+            x-show="step === 'step2'"
+          >
+            Antal &RightArrow;
+          </button>
+
+          <button
+            id="knap4"
+            class="hover:slide-right border-2 border-blue p-2"
+            x-on:click="step = 'step4'"
+            x-show="step === 'step3'"
+          >
+            Køb &RightArrow;
+          </button>
+
+          <a
+            href="*"
+            id="knap4"
+            class="m-4 h-auto w-20 rounded-xl bg-light-green p-1 hover:bg-pale-green"
+            x-on:click="step = 'step4'"
+            x-show="step === 'step4'"
+          >
+            læg i kurv
+          </a>
+        </div>
+
+        <label for="kode">Repat kode:</label>
+
+        <input
+          name="kode"
+          id="kode"
+          x-model="kode"
+          type="number"
+          placeholder="Indtast kode"
+        />
+      </section>
+
+      <div class="mx-4 h-0.5 w-[70%] bg-blue ring-1"></div>
+      <!--under galleri af produktet-->
+      <section class="m-4 grid grid-cols-5 gap-2">
+        <img
+          class="h-auto w-[250px] ring-2"
+          src="img/pexels-j-sarkar-991509.webp"
+          alt="mindre produkt billede i en anden farve"
+        />
+        <img
+          class="h-auto w-[250px] ring-2"
+          src="img/pexels-j-sarkar-991509.webp"
+          alt="mindre produkt billede i en anden farve"
+        />
+        <img
+          class="h-auto w-[250px] ring-2"
+          src="img/pexels-j-sarkar-991509.webp"
+          alt="mindre produkt billede i en anden farve"
+        />
+        <img
+          class="h-auto w-[250px] ring-2"
+          src="img/pexels-j-sarkar-991509.webp"
+          alt="mindre produkt billede i en anden farve"
+        />
+        <img
+          class="h-auto w-[250px] ring-2"
+          src="img/pexels-j-sarkar-991509.webp"
+          alt="mindre produkt billede i en anden farve"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <div class="h-2 w-[100%] bg-blue ring-1"></div>
+      <div class="grid grid-cols-2">
+        <div class="mx-5">
+          <h3 class="text-xl">Kundeservice</h3>
+          <ul class="">
+            <li>adresse: M.D Fictive vej 5</li>
+            <li>Postnummer/By 0000 falskby</li>
+            <li>Telefonnummer 00 00 00 00</li>
+            <li>email falskmail@falsk</li>
+            <li>åbneingstider 00:00 - 24:00</li>
+          </ul>
+        </div>
+        <div class="mx-5">
+          <h3 class="my-4 text-center text-xl">Nyhedsbrev</h3>
+          <div class="flex justify-center gap-4">
+            <input
+              type="text"
+              placeholder="Navn"
+              class="input input-bordered input-primary float w-full max-w-xs"
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              class="input input-bordered input-primary float w-full max-w-xs"
+            />
+          </div>
+          <div class="flex justify-center">
+            <button
+              class="col-start-2 col-end-3 my-3 w-20 rounded-lg bg-light-blue text-center text-white shadow-lg hover:bg-pale-blue"
+            >
+              Bekræft
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
